@@ -16,3 +16,94 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.gallery {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  list-style: none;
+}
+
+.gallery-link {
+  display: block;
+}
+
+.gallery-image:hover {
+  transform: scale(1.04);
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  display: block;
+  transition: transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  max-width: 400px;
+  gap: 8px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #333;
+}
+
+.feedback-form input {
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  margin-top: 8px;
+  width: 360px;
+  height: 40px
+}
+
+.feedback-form textarea {
+  outline: none;
+  margin-top: 8px;
+  resize: none;
+  width: 360px;
+  height: 80px;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.feedback-form button {
+  align-self: flex-start;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.feedback-form button:hover {
+  background-color: #6c8cff;
+}

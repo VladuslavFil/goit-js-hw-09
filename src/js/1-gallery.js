@@ -68,11 +68,9 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector('.gallery');
+const gallery = document.querySelector(".gallery");
 
-gallery.innerHTML = images
-  .map(
-    ({ preview, original, description }) => `
+gallery.innerHTML = images.map(({ preview, original, description }) => `
 <li class="gallery-item">
 <a class="gallery-link" href="${original}">
 <img 
@@ -82,11 +80,9 @@ alt="${description}"
 />
 </a>
 </li>
-`
-  )
-  .join('');
+`).join('');
 
-new SimpleLightbox('.gallery a', {
-  captionsData: 'alt',
-  captionDelay: 250,
-});
+new SimpleLightbox('.gallery a', { 
+  captionsData: 'alt',   
+  captionDelay: 250,  
+ });
